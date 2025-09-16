@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio of Oyoo Jerry Steve — Web Development, SEO, Networking, Graphic Design" />
+  <title>Oyoo Jerry Steve — Web Developer</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preload important image (optional) -->
+  <link rel="preload" as="image" href="assets/profile.jpg" />
+
+  <!-- Main JavaScript (deferred) -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- ========= Header / Navigation ========= -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Oyoo Jerry Steve homepage">
+        <img src="assets/profile-thumb.jpg" alt="Oyoo Jerry Steve" class="brand-img" />
+        <span class="brand-name">Oyoo Jerry</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <button id="menuToggle" class="menu-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <ul id="primaryNav" class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========= Main: Sections for each page (single-file multi-section) ========= -->
+  <main id="main" class="site-main" role="main">
+    <!-- Home / Hero -->
+    <section id="home" class="hero-section" aria-labelledby="home-heading">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="home-heading">Hi — I'm <span class="accent">Oyoo Jerry Steve</span></h1>
+          <p class="lead">
+            Professional Web Developer — building responsive, accessible web experiences.
+            Skilled in software development, SEO, networking, and graphic design.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a class="btn ghost" href="#services">See Services</a>
+          </div>
+        </div>
+
+        <figure class="hero-image" aria-hidden="false">
+          <img src="assets/profile.jpg" alt="Portrait of Oyoo Jerry Steve" />
+          <figcaption class="sr-only">Portrait photo of Oyoo Jerry Steve</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Featured Projects (compact preview) -->
+    <section id="projects-preview" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Featured Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="assets/project1.jpg" alt="Clinic Booking System screenshot" class="card-img" />
+            <div class="card-body">
+              <h3>Clinic Booking System</h3>
+              <p>Full-stack booking application using MySQL, PHP and a responsive UI.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/project2.jpg" alt="SEO Blog Platform screenshot" class="card-img" />
+            <div class="card-body">
+              <h3>SEO Blog Platform</h3>
+              <p>Mobile-friendly blog optimized for search engines and content engagement.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/project3.jpg" alt="Network setup photo" class="card-img" />
+            <div class="card-body">
+              <h3>Network Setup & Maintenance</h3>
+              <p>Physical and wireless networks implemented for small business environments.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am <strong>Oyoo Jerry Steve</strong>, a web developer with a Diploma in Computer Science (Mount Kenya University).
+              I graduated top of my class and have experience in web development, SEO copywriting, graphic design, and network setup, AI prompt engineer, BlockChain technology enthusiaste, Data analysis.
+            </p>
+            <p>
+              My approach is pragmatic: write semantic code, prioritize accessibility, and deliver solutions that meet real user needs.
+            </p>
+
+            <ul class="meta-list" aria-hidden="false">
+              <li><strong>Education:</strong> Diploma — Computer Science (Mount Kenya University)</li>
+              <li><strong>Certifications:</strong> NITA certificate (Distinction)</li>
+              <li><strong>Tools:</strong> HTML5, CSS3, Python, JavaScript, MySQL, Canva</li>
+            </ul>
+          </div>
+
+          <aside class="about-aside" aria-label="Quick facts">
+            <div class="stat">
+              <strong>Years</strong><span>7+</span>
+              <small>experience</small>
+            </div>
+            <div class="stat">
+              <strong>Projects</strong><span>15+</span>
+              <small>delivered</small>
+            </div>
+            <div class="stat">
+              <strong>Top</strong><span>of class</span>
+              <small>achievements</small>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Services</h2>
+        <p class="section-lead">I offer practical services for small businesses and individuals.</p>
+
+        <ul class="services-grid" role="list">
+          <li class="service-card">
+            <img src="assets/icon-webdev.svg" alt="" aria-hidden="true" class="service-icon" />
+            <h3>Web Development</h3>
+            <p>Responsive websites, progressive enhancement, custom front-end solutions.</p>
+          </li>
+
+          <li class="service-card">
+            <img src="assets/icon-seo.svg" alt="" aria-hidden="true" class="service-icon" />
+            <h3>SEO Copywriting</h3>
+            <p>Content optimized for discoverability and conversion.</p>
+          </li>
+
+          <li class="service-card">
+            <img src="assets/icon-network.svg" alt="" aria-hidden="true" class="service-icon" />
+            <h3>Networking</h3>
+            <p>Physical and wireless network setup and maintenance for offices.</p>
+          </li>
+
+          <li class="service-card">
+            <img src="assets/icon-design.svg" alt="" aria-hidden="true" class="service-icon" />
+            <h3>Graphic Design</h3>
+            <p>Marketing assets and visual content built with modern tools like Canva.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Interests / Gallery -->
+    <section id="interests" class="section interests" aria-labelledby="interests-heading">
+      <div class="container">
+        <h2 id="interests-heading">Interests & Projects</h2>
+        <p class="section-lead">Photography, storytelling, open-source contributions and small web experiments.</p>
+
+        <div class="gallery-grid" role="list">
+          <!-- Each image opens lightbox; images are placeholders in assets/ -->
+          <button class="gallery-item" data-full="assets/photo1-large.jpg" aria-label="Open photo 1">
+            <img src="assets/photo1-thumb.jpg" alt="Street photography sample" />
+          </button>
+
+          <button class="gallery-item" data-full="assets/photo2-large.jpg" aria-label="Open photo 2">
+            <img src="assets/photo2-thumb.jpg" alt="Coding project screenshot" />
+          </button>
+
+          <button class="gallery-item" data-full="assets/photo3-large.jpg" aria-label="Open photo 3">
+            <img src="assets/photo3-thumb.jpg" alt="Event storytelling snapshot" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <p class="section-lead">Interested in working together? Send a message and I will reply shortly.</p>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" novalidate aria-describedby="formFeedback">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send Message</button>
+              <button type="reset" class="btn ghost">Reset</button>
+            </div>
+
+            <p id="formFeedback" role="status" aria-live="polite" class="form-feedback"></p>
+          </form>
+
+          <aside class="contact-info" aria-label="Contact information">
+            <h3>Quick Contact</h3>
+            <p><strong>Email:</strong> <a href="mailto:oyoojerry@gmail.com">oyoojerry@gmail.com</a></p>
+            <p><strong>Location:</strong> Nairobi, Kenya</p>
+
+            <div class="social">
+              <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+              <a href="#" aria-label="GitHub profile">GitHub</a>
+              <a href="#" aria-label="YouTube channel">YouTube</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========= Footer ========= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Oyoo Jerry Steve — All rights reserved.</p>
+      <nav aria-label="Footer navigation" class="footer-nav">
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ========= Lightbox Modal (hidden by default) ========= -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close preview">✕</button>
+    <img id="lightboxImage" alt="Expanded preview" />
+  </div>
+</body>
+</html>
